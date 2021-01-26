@@ -10,11 +10,14 @@
 </head>
 <body>
     <div id="container">
-            <div class="container_img">
-                <span><i class="fas fa-chevron-left" @click="clickPrev"></i></span>
-                <img :src="imgArray[counter]">
-                <span><i class="fas fa-chevron-right" @click="clickNext"></i></span>
-            </div>
+        <div class="container_img">
+            <span><i class="fas fa-chevron-left" @click="clickPrev"></i></span>
+            <img :src="imgArray[counter]">
+            <span><i class="fas fa-chevron-right" @click="clickNext"></i></span>
+        </div>
+        <div class="container_point">
+            <i v-for="(item, index) in imgArray" :class="(index == counter) ? active : '' " class="fas fa-circle" ></i>
+        </div> 
     </div>
 
 
