@@ -16,7 +16,7 @@
             <span><i class="fas fa-chevron-right" @click="clickNext"></i></span>
         </div>
         <div class="container_point">
-            <i v-for="(item, index) in imgArray" :class="(index == counter) ? active : '' " class="fas fa-circle" ></i>
+            <i v-for="(item, index) in imgArray" :class="(index == counter) ? active : '' " class="fas fa-circle" @click="cambiaFoto(index)"></i>
         </div> 
     </div>
 

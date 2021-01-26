@@ -26,5 +26,9 @@ var app = new Vue ({
             }
             console.log(this.counter);
         },
+
+        cambiaFoto: function(index) {
+            this.counter = [index]
+        }
     }
 });
